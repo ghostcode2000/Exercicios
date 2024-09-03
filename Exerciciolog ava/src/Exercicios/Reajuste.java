@@ -7,6 +7,8 @@ public class Reajuste {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	/* Faça um algoritmo que leia um valor qualquer e imprima na tela com um reajuste de 5%. */
+
 	int	valor;
 	double resultado;
 	double porcentagem = 5;
