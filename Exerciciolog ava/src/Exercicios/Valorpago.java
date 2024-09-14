@@ -27,37 +27,38 @@ public class Valorpago {
 	
 	double totalCompra;
 	
+	  // Condições de pagamento
 	switch (digitoPagamento) {
 	
 	case 1:
 	
 		totalCompra = valorProduto * 0.85 ;
-		System.out.printf("Forma de pagamento pix:valor com 15% desconto");
+		System.out.println("Forma de pagamento pix:valor com 15% desconto");
 		break;
 	
 	case 2:
 		
 		totalCompra = valorProduto * 0.90;
-		System.out.printf("Forma de pagamento Cartão de Credito (10% de desconto)");
+		System.out.println("Forma de pagamento Cartão de Credito (10% de desconto)");
 		break;
 	
 	case 3:
 		
 		totalCompra = valorProduto;
-		System.out.printf("Forma de pagamento Parcelado 2x :Sem juros");
+		System.out.println("Forma de pagamento Parcelado 2x :Sem juros");
 		break;
 		
 	case 4:
 		
-		totalCompra = valorProduto * 0.110;
-		System.out.printf("Forma de pagameto parcelado 3x: 10% juros");
+		totalCompra = valorProduto * 1.10;
+		System.out.println("Forma de pagameto parcelado 3x: 10% juros");
 		break;
 	default:
-		System.out.printf("Código invalido.");
+		System.out.println("Código invalido.");
 		return;
-	              }
-		
-		System.out.printf("Valor a ser pago : R$ %.2f\n" ,totalCompra );
+	              } 
+	   // Exibe o valor final da compra formatado
+		System.out.printf("Valor final a ser pago: R$ %.2f\n" ,totalCompra );
 	
 scanner.close();
 		
