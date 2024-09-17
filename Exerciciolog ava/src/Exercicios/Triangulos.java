@@ -11,7 +11,7 @@ public class Triangulos {
 
          equilátero, isósceles ou escaleno.*/
 		
-		int A1,A2,A3;
+		int A1,A2,A3; 
 		
 		Scanner leitor = new Scanner(System.in);
 		
